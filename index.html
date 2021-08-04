@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Submit Form</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+ 
+</head>
+<body>
+  <div class="container">
+    <h2 class="title">Enter User Information</h2>
+    <form autocomplete="off" onsubmit="return(btnSubmit())">
+      <div class="user-details">
+
+        <div class="input-box">
+          <span class="details">First Name</span>
+          <input type="text" placeholder="Type first name here" name="Fname" id="Fname">
+          <p id="demo1"></p>
+        </div>
+
+        <div class="input-box">
+          <span class="details">Email Address</span>
+          <input type="text" placeholder="Type email address here" name="Email" id="Email">
+          <p id="demo2"></p>
+        </div>
+
+        <div class="input-box">
+          <span class="details">Last Name</span>
+          <input type="text" placeholder="Type last name here" name="Lname" id="Lname">
+          <p id="demo3"></p>
+        </div>
+
+        <div class="input-box"> 
+          <input type="radio" name="userType" id="dot-1">
+          <input type="radio" name="userType" id="dot-2">
+          <input type="radio" name="userType" id="dot-3">
+
+          <span class="details">User Type</span>
+          <div class="category" name="Utype">
+            <label for="dot-1">
+              <span class="dot one"></span>
+              <span class="type">School</span>
+            </label>
+            <label for="dot-2">
+              <span class="dot two"></span>
+              <span class="type">University</span>
+            </label>
+            <label for="dot-3">
+              <span class="dot three"></span>
+              <span class="type">Employee</span>
+            </label>
+          </div>
+          <p id="demo4"></p>
+        </div>
+
+        <div class="input-box">
+          <span class="details">Contact Number</span>
+          <input type="text" placeholder="Type contact number here" name="Number" id="Number">
+          <p id="demo5"></p>
+        </div>
+
+        <div class="input-box">
+          <span class="details">Payment Type</span>
+          <select name="Payment" class="optn">
+            <option selected="" value="Default">Full Payment</option>
+            <option value="AF">Half Payment</option>
+          </select>
+        </div>
+
+        <div class="input-box">
+          <span class="details">Address</span>
+          <textarea type="text" placeholder="Type user address here" name="Address" id="Address"></textarea>
+          <p id="demo6"></p>
+        </div>
+
+      </div>
+
+      <div class="button">
+          <input type="submit" value="Submit" onsubmit="btnSubmit()">
+      </div>
+
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+  
+</body>
+
+</html>
